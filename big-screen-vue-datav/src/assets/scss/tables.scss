@@ -1,0 +1,170 @@
+/*表格样式*/
+.el-table {
+  background-color: rgba(255, 255, 255, 0);
+  color: #FFFFFF;
+  border: none;
+
+  &:before,
+  *:before {
+    height: 0px !important;
+  }
+
+  th,
+  tr,
+  td {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  th>.cell {
+    color: #24b2bc;
+  }
+
+  * {
+    border: none;
+  }
+
+  .el-table__header {
+    tr {
+      background-color: rgba(255, 255, 255, 0);
+
+      th {
+        border: none;
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0);
+      }
+
+      .is-leaf {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .el-table__body {
+    tr {
+      background-color: rgba(255, 255, 255, 0);
+
+      td {
+        border: none;
+
+        button {
+          background-color: #245cbc;
+          padding: 5px;
+          color: #fff;
+        }
+      }
+    }
+
+    .el-table__empty-text {
+      color: white;
+    }
+  }
+
+  //修改带操作的表格背景色
+  .el-table__row {
+    &:hover {
+      td {
+        background-color: rgba(255, 255, 255, 0) !important;
+      }
+    }
+  }
+
+  //修改固定右边操作的表格背景悬浮色
+  .hover-row {
+    td {
+      background-color: rgba(255, 255, 255, 0) !important;
+    }
+  }
+
+
+}
+
+.el-pagination button:disabled {
+  background-color: #0b0f1c;
+}
+
+.el-button--default {
+  background-color: rgb(83, 194, 83);
+  color: #fff;
+  border-color: green;
+}
+
+.el-pager li {
+  background: none;
+  border: 1px solid #409EFF;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #409EFF inset;
+}
+
+// 时间选择器样式修改
+.el-date-editor .el-range-input,
+.el-date-editor .el-range-separator {
+  background: none;
+}
+
+// 弹框样式修改
+.el-dialog {
+  background-color: #0b0f1c;
+}
+
+.el-dialog .el-dialog__body .el-form label {
+  color: #fff;
+}
+
+.el-dialog .el-dialog__header .el-dialog__title {
+  color: #fff;
+}
+
+.el-input__inner {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #409EFF;
+  box-shadow: 0 0 5px #409EFF inset;
+  color: #FFFFFF;
+}
+
+
+// 选择框修改
+.el-date-editor .el-range-input,
+.el-date-editor .el-range-separator {
+  background: none;
+}
+
+.el-form-item {
+  margin-left: 10px;
+}
+
+.el-pagination {
+  width: 420px;
+  position: fixed;
+  right: 0
+}
+
+// 下标选择
+.el-tabs__item {
+  color: #a5b0b6;
+}
+
+// 树形菜单样式修改
+.el-tree {
+  background: transparent;
+  color: #c8c8c8;
+
+}
+// 鼠标在树形节点上面
+.el-tree-node__content:hover, .el-upload-list__item:hover {
+  background-color: #484545;
+}
+.el-tree-node:focus>.el-tree-node__content {
+  background-color: #484545;
+}
+.el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
+  background-color: #484545;
+}
+
+// 复选框
+.el-checkbox__inner {
+  background-color: #484545;
+}
+
+.el-switch__label {
+  color: #FFFFFF;
+}

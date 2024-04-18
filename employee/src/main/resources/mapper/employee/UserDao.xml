@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tyut.employee.dao.UserDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.tyut.employee.entity.UserEntity" id="userMap">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="sex" column="sex"/>
+        <result property="birthday" column="birthday"/>
+        <result property="birth" column="birth"/>
+        <result property="education" column="education"/>
+        <result property="school" column="school"/>
+        <result property="major" column="major"/>
+        <result property="photo" column="photo"/>
+        <result property="resume" column="resume"/>
+    </resultMap>
+
+
+</mapper>

@@ -1,0 +1,36 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: tyut_employee
+
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tyut_employee?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+oss:
+  endpoint: http://XXXXXXX:9000
+  accessKey: minioadmin
+  secretKey: minioadmin
+  bucket: artboy
+
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto  # 主键自增
+      #logic-delete-value: 1
+      #logic-not-delete-value: 0
